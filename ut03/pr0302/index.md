@@ -13,3 +13,5 @@
     * A continuación, he ido a Odoo, he entrado en "Ajustes", he ido al apartado de "Integraciones" y he marcado "Google Images".
     * Por último, se me abrirán dos opciones para poner la clave API y el id del buscador.
     * Para comprobar, he ido a un producto y en acciones me ha aparecido el apartado de "Obtener imágenes de Google Images", le das y te aparece la imagen
+
+* Enlace de la captura de pantalla del inventario: [Inventario](https://imgur.com/BTfn1s3)
