@@ -39,6 +39,7 @@ for i in range(1,base+1):
     print("*" * i)
 ```
 * Modifica el programa anterior para que en lugar de crear un triángulo cree una pirámide. Si el usuario introduce un número par se lo volverá a pedir hasta que introduzca un número par
+
 ```python
 base = int(input("Introduce un número impar"))
 while base % 2 == 0:
