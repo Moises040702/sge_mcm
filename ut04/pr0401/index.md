@@ -31,3 +31,22 @@ k = int(input("Dime un número: "))
 for k in range(1,k+1):
     print(str(n) + " * " + str(k) + " = " + str(n * k))
 ```
+* Crea un programa que solicite un número al usuario y dibuje un triángulo con asteriscos cuya base sea el número introducido.
+
+```python
+base = int(input("Introduce un número: "))
+for i in range(1,base+1):
+    print("*" * i)
+```
+* Modifica el programa anterior para que en lugar de crear un triángulo cree una pirámide. Si el usuario introduce un número par se lo volverá a pedir hasta que introduzca un número par
+```python
+base = int(input("Introduce un número impar"))
+while base % 2 == 0:
+    print("No es un número impar")
+    base = int(input("Introduce un número impar"))
+
+for i in range(1,base+1,2):
+    espacios = (base-i) //2
+    print(" " * espacios + "*" * i)
+
+```
