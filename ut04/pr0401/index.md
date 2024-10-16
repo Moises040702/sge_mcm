@@ -51,3 +51,15 @@ for i in range(1,base+1,2):
     print(" " * espacios + "*" * i)
 
 ```
+* Crea un programa que pida al usuario que introduzca 5 números y luego le diga cuál es el mayor y el menor de todos ellos de la forma: El número mayor es <mayor> y el menor es <menor>
+```python
+numeros = input("Introduce 5 números separados por espacios: ").split()
+numeros = [int(numero) for numero in numeros]
+mayor = max(numeros)
+menor = min(numeros)
+print(f"El número mayor es {mayor} y el menor es {menor}")
+
+```
+
+* Crea un programa que convierta entre diferentes unidades de longitud (milímetros, centímetros, metros y kilómetros). El usuario introducirá primero la cantidad, luego la unidad de medida en que está y finalmente la unidad de medida a la que se va a convertir.
+
