@@ -63,4 +63,90 @@ print(f"El número mayor es {mayor} y el menor es {menor}")
 ```
 
 * Crea un programa que convierta entre diferentes unidades de longitud (milímetros, centímetros, metros y kilómetros). El usuario introducirá primero la cantidad, luego la unidad de medida en que está y finalmente la unidad de medida a la que se va a convertir.
+```python
+conversiones = {
+    'mm': 0.001,  
+    'cm': 0.01,    
+    'm': 1,        
+    'km': 1000     
+}
 
+cantidad = float(input("Introduce la cantidad: "))
+unidad_inicial = input("Introduce la unidad de medida inicial (mm, cm, m, km): ").lower()
+unidad_final = input("Introduce la unidad de medida final (mm, cm, m, km): ").lower()
+
+cantidad_en_metros = cantidad * conversiones[unidad_inicial]
+
+cantidad_convertida = cantidad_en_metros / conversiones[unidad_final]
+
+print(f"{cantidad} {unidad_inicial} es igual a {cantidad_convertida} {unidad_final}")
+  ```
+
+ * Crea un programa que genere un número aleatorio entre 0 y 100 y el usuario tenga que adivinarlo. Cada vez que el usuario introduzca un número el programa le dirá si el número es más alto o más bajo.
+ ```python 
+from random import randint
+numero_secreto = randint(0,100)
+while True:
+    intento = int(input("Introduce un número del 0 al 100"))
+    if intento < numero_secreto:
+        print("El número es menor del deseado")
+    elif intento > numero_secreto:
+        print("El número es mayor del deseado")
+    else:
+        print("Felicidades ese es el número")
+        break
+```
+* Crea un programa que implemente el clásico juego de piedra, papel, tijeras, lagarto y spock.
+```python 
+import random
+
+opciones = ['piedra', 'papel', 'tijera', 'lagarto', 'spock']
+reglas = {
+    'piedra': ['tijera', 'lagarto'],
+    'papel': ['piedra', 'spock'],
+    'tijera': ['lagarto', 'papel'],
+    'lagarto': ['papel', 'spock'],
+    'spock': ['tijera', 'piedra']
+}
+
+jugadoruno = 0
+jugadordos_puntos = 0
+
+while jugadoruno < 5 and jugadordos_puntos < 5:
+    print("\nElige una opción: piedra, papel, tijera, lagarto, spock: ")
+    jugador = input("Tu elección: ").lower()
+
+    if jugador not in opciones:
+        print("Opción no válida")
+        continue
+
+    jugadordos = random.choice(opciones)
+    print(f"El jugador dos eligió: {jugadordos}")
+
+    if jugador == jugadordos:
+        print("Empate")
+    elif jugadordos in reglas[jugador]:
+        print(f"Has ganado. {jugador} ha ganado esta ronda a {jugadordos}")
+        jugadoruno += 1
+    else:
+        print(f"Has perdido. {jugadordos} ha ganado esta ronda a {jugador}")
+        jugadordos_puntos += 1
+
+if jugadoruno == 5:
+    print("\n¡Felicidades, ganaste el juego!")
+else:
+    print("\nEl jugador dos ganó el juego. ¡Suerte para la próxima!")
+```
+
+ * Crea un programa que genere los primeros n números de la secuencia de Fibonacci
+ ```python 
+
+cantidad = int(input("Introduce la cantidad de números de la secuencia de Fibonacci: "))
+
+secuencia_fibonacci = [1, 1]
+
+for i in range(2, cantidad):
+    secuencia_fibonacci.append(secuencia_fibonacci[i-2] + secuencia_fibonacci[i-1])
+
+print(secuencia_fibonacci[:cantidad])
+```
