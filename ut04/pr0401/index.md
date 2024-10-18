@@ -98,9 +98,10 @@ while True:
 ```
 
 * Crea un programa que implemente el clásico juego de piedra, papel, tijeras, lagarto y spock.
-```python 
-import random
 
+```python 
+
+import random
 opciones = ['piedra', 'papel', 'tijera', 'lagarto', 'spock']
 reglas = {
     'piedra': ['tijera', 'lagarto'],
@@ -140,6 +141,7 @@ else:
 ```
 
  * Crea un programa que genere los primeros n números de la secuencia de Fibonacci
+ 
  ```python 
 
 cantidad = int(input("Introduce la cantidad de números de la secuencia de Fibonacci: "))
