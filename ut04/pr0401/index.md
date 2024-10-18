@@ -96,6 +96,7 @@ while True:
         print("Felicidades ese es el número")
         break
 ```
+
 * Crea un programa que implemente el clásico juego de piedra, papel, tijeras, lagarto y spock.
 ```python 
 import random
