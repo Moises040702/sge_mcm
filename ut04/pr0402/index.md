@@ -1,6 +1,7 @@
 ## Práctica 0402
 
 * Escribe una función que reciba una cadena y cuente cuántas vocales y consonantes contiene.
+
 ```python
 def contar_vocales_consonantes(cadena):
     vocales = "aeiouAEIOU"
@@ -14,8 +15,8 @@ def contar_vocales_consonantes(cadena):
 cadena = "Hola Mundo"
 vocales, consonantes = contar_vocales_consonantes(cadena)
 print(f"Vocales: {vocales}, Consonantes: {consonantes}")
-
 ```
+
 * Crea un programa que invierta una cadena.
 ``` python
 cadena = "Hola Mundo"
@@ -64,6 +65,7 @@ cadena = "Hola Mundo"
 print(cadena[::-1])
 ```
 * Crea un programa que verifique si dos cadenas son anagramas. Se considera que dos palabras son anagramas si tienen las mismas letras en diferente orden, por ejemplo, lácteo y coleta.
+
 ```python
 cadena1 = "lácteo"
 cadena2 = "coleta"
