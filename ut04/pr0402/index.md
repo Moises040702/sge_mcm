@@ -78,3 +78,18 @@ if sorted(cadena1) == sorted(cadena2):
 else:
     print("Las cadenas no son anagramas.")
 ```
+* Crea una función que reciba una cadena y devuelva un diccionario con la frecuencia de cada carácter.
+```python
+def frecuencia_caracteres(cadena):
+    frecuencia = {}
+    for caracter in cadena:
+        if caracter in frecuencia:
+            frecuencia[caracter] += 1
+        else:
+            frecuencia[caracter] = 1
+    return frecuencia
+cadena = "hola mundo"
+print(frecuencia_caracteres(cadena))
+```
+* Escribe un programa que elimine todos los caracteres no alfanuméricos (como signos de puntuación) de una cadena.
+```python
