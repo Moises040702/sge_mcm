@@ -93,3 +93,29 @@ print(frecuencia_caracteres(cadena))
 ```
 * Escribe un programa que elimine todos los caracteres no alfanuméricos (como signos de puntuación) de una cadena.
 ```python
+cadena = "¡Hola, mundo! ¿Cómo estás?"
+cadena_limpia = ''.join(caracter for caracter in cadena if caracter.isalnum())
+print("Cadena limpia:", cadena_limpia)
+```
+
+* Escribe un programa que transforme una cadena de palabras separadas por espacios o guiones en formato camelCase (la primera letra de cada palabra, excepto la primera, debe ser mayúscula y no debe haber espacios ni guiones).
+```python
+cadena = "Hola-mundo prueba"
+cadena = cadena.replace("-", " ")
+palabras = cadena.split(" ")
+camel = palabras[0].lower()
+for palabra in palabras[1:]:
+    camel += palabra.capitalize()
+print(camel) 
+```
+
+* Escribe una función que compare dos cadenas sumando el valor ASCII de cada carácter y devuelva cuál tiene un mayor valor total. Para este ejercicio ten en cuenta que la función integrada ord() devuelve el valor ASCII de un carácter
+```python
+def get_ascii_value(parametro1):
+    value = 0
+    for char in parametro1:
+        value += ord(char)
+    return value
+a = get_ascii_value("moises")
+print(a)
+```
