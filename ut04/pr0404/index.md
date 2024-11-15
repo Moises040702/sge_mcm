@@ -125,8 +125,8 @@ print("Diccionario invertido:", diccionario_invertido)
 ```
 
 * Escribe un programa que tome dos diccionarios de productos y precios, y combine los productos comunes sumando sus precios, sin duplicar los elementos únicos.
-
 ```python
+
 productos1 = {"Manzana": 1.2, "Banana": 0.8, "Naranja": 1.5}
 productos2 = {"Banana": 0.7, "Pera": 1.3, "Naranja": 1.0}
 productos_combinados = productos1.copy()
