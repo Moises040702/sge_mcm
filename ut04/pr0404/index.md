@@ -122,7 +122,6 @@ diccionario_invertido = intercambiar_claves_valores(diccionario_original)
 
 print("Diccionario original:", diccionario_original)
 print("Diccionario invertido:", diccionario_invertido)
-
 ```
 
 * Escribe un programa que tome dos diccionarios de productos y precios, y combine los productos comunes sumando sus precios, sin duplicar los elementos únicos.
@@ -139,5 +138,5 @@ for producto, precio in productos2.items():
 print("Productos combinados:")
 for producto, precio in productos_combinados.items():
     print(f"{producto}: {precio:.2f} €")
-
+```
 
