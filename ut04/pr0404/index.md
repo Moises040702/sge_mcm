@@ -113,6 +113,7 @@ while True:
 ```
 
 * Escribe una función que tome un diccionario y devuelva otro con las claves y valores intercambiados (lo que antes eran valores ahora son claves, y viceversa).
+
 ```python
 
 def intercambiar_claves_valores(diccionario):
@@ -122,9 +123,11 @@ diccionario_invertido = intercambiar_claves_valores(diccionario_original)
 
 print("Diccionario original:", diccionario_original)
 print("Diccionario invertido:", diccionario_invertido)
+
 ```
 
 * Escribe un programa que tome dos diccionarios de productos y precios, y combine los productos comunes sumando sus precios, sin duplicar los elementos únicos.
+
 ```python
 
 productos1 = {"Manzana": 1.2, "Banana": 0.8, "Naranja": 1.5}
