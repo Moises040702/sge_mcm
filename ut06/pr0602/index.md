@@ -12,6 +12,7 @@
     * A continuación pasaré la estructura de los ficheros que he modificado:
         
          * __ __manifest__ __.py:
+
 ```python
 # -*- coding: utf-8 -*-
 {
@@ -52,6 +53,7 @@
 }
 ```
 * autor.py:
+
 ```python
 from odoo import models, fields
 
@@ -64,6 +66,7 @@ class Autor(models.Model):
     libro_ids = fields.One2many('library_mc.libro', 'author_id', string='Libros escritos')
 ```
 * libro.py:
+
 ```python
 from odoo import models, fields
 
@@ -84,6 +87,7 @@ class Libro(models.Model):
     socios_ids = fields.Many2many('library_mc.socio', string="Socios que han tomado el libro prestado")
 ```
 * socio.py:
+
 ```python
 from odoo import models, fields
 
@@ -96,6 +100,7 @@ class Socio(models.Model):
     libro_ids = fields.Many2many('library_mc.libro', string='Libros prestados')  
 ```
 * autor_views.xml:
+
 ```python
 <odoo>
     <!-- Acción para la vista de Autores -->
@@ -120,6 +125,7 @@ class Socio(models.Model):
 </odoo>
 ```
 * libro_views.xml:
+
 ```python
 <odoo>
     <!-- Acción para la vista de libros -->
@@ -153,6 +159,7 @@ class Socio(models.Model):
 </odoo>
 ```
 * menu_views.xml:
+
 ```python
 <odoo>
     <!-- Menú principal de la biblioteca -->
@@ -183,6 +190,7 @@ class Socio(models.Model):
 </odoo>
 ```
 * socio_views.xml:
+
 ```python
 <odoo>
     <!-- Acción para la vista de Socios -->
