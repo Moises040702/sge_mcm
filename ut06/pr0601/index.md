@@ -52,6 +52,7 @@
 }
 ```
 * models.py:
+
 ```python
 from odoo import models, fields
 
@@ -89,6 +90,7 @@ class Product(models.Model):
     peso = fields.Float(string='Peso del Producto', digits=(6, 2))
 ```
 * views.xml:
+
 ```python
 <odoo>
     <record id="view_product_tree" model="ir.ui.view">
