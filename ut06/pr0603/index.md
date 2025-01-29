@@ -13,6 +13,7 @@
     * A continuación pasaré la estructura de los ficheros que he modificado:
         
         * __ __manifest__ __.py:
+        
 ```python
 # -*- coding: utf-8 -*-
 {
