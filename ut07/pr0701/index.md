@@ -21,7 +21,6 @@
 * dynamic_web.xml:
 
 ```python
-<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="subscription_list_web">
         <t t-call="web.html_container">
