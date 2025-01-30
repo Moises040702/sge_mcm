@@ -36,3 +36,4 @@
         </t>
     </template>
 </odoo>
+```
