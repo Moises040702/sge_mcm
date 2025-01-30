@@ -37,3 +37,9 @@
 [PR0604](/ut06/pr0604/index.md)
 
 [PR0605](/ut06/pr0605/index.md)
+
+## Unidad 7
+
+[PR0701](/ut07/pr0701/index.md)
+
+[PR0702](/ut07/pr0702/index.md)
