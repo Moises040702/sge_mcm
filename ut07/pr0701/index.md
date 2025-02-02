@@ -1,4 +1,4 @@
-## Práctica 0607
+## Práctica 0701
 
 * Ya que la práctica contiene el mismo módulo de la práctica anterior añadiré el contenido nuevo.
 
@@ -36,4 +36,25 @@
         </t>
     </template>
 </odoo>
+```
+* controllers.py:
+
+```python
+# -*- coding: utf-8 -*-
+from odoo import http
+from odoo.http import request, Response
+import json
+
+class Subscription(http.Controller):
+
+    @http.route('/subscription/static', type='http', auth='public', website=True)
+    def bienvenida(self, **kwaargs):
+        return http.request.render('subscription.static_web', {})
+
+    @http.route('/subscription/dinamic', type='http', auth='public', website=True)
+    def subscription_list_web(self, **kwargs):
+        sub = http.request.env['subscription.management'].search([])
+        return request.render('subscription.subscription_list_web', {
+            'suscripciones': sub
+        })
 ```
