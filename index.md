@@ -26,6 +26,8 @@
 
 [PR0501](/ut05/pr0501/index.md)
 
+[PR0502](/ut05/pr0502/index.md)
+
 ## Unidad 6
 
 [PR0601](/ut06/pr0601/index.md) 
