@@ -118,3 +118,4 @@ class Product(models.Model):
     <menuitem id="menu_product_list" name="Productos" parent="menu_product_root" action="action_product_list"/>
 </odoo>
 ```
+ * [Interfaz](https://imgur.com/a/6MBtv6l)

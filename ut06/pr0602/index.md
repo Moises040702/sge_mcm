@@ -214,3 +214,4 @@ class Socio(models.Model):
     </record>
 </odoo>
 ```
+* [Interfaz](https://imgur.com/a/BVP9RnA)

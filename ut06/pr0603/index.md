@@ -144,4 +144,3 @@ def _check_constraints(self):
               sequence="10"/>
 </odoo>
 ```
-

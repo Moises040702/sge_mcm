@@ -171,3 +171,4 @@ class subscription(models.Model):
   </data>
 </odoo>
 ```
+* [Interfaz](https://imgur.com/a/935sx2b)
