@@ -192,19 +192,17 @@ class SubscriptionMetrica(models.Model):
 ```python
 <odoo>
     <data>
-        <!-- Menú principal para la gestión de métricas -->
+
         <menuitem id="menu_principal"
                   name="Métricas"
                   sequence="10"/>
 
-        <!-- Submenú de Métricas -->
         <menuitem id="menu_metricas"
                   name="Proyectos"
                   parent="menu_principal"
                   action="action_subscription_metrica"
                   sequence="10"/>
 
-        <!-- Vista form para 'subscription.management' -->
         <record id="view_form_subscription_management" model="ir.ui.view">
             <field name="name">subscription.management.form</field>
             <field name="model">subscription.management</field>
@@ -231,7 +229,6 @@ class SubscriptionMetrica(models.Model):
             </field>
         </record>
 
-        <!-- Vista tree para 'subscription.management' -->
         <record id="view_tree_subscription_management" model="ir.ui.view">
             <field name="name">subscription.management.tree</field>
             <field name="model">subscription.management</field>
@@ -246,15 +243,12 @@ class SubscriptionMetrica(models.Model):
                 </tree>
             </field>
         </record>
-
-        <!-- Acción para abrir la vista de suscripciones -->
         <record id="action_subscription_management" model="ir.actions.act_window">
             <field name="name">Gestión de Suscripciones</field>
             <field name="res_model">subscription.management</field>
             <field name="view_mode">tree,form</field>
         </record>
 
-        <!-- Vista form para 'subscription.metrica' -->
         <record id="view_form_subscription_metrica" model="ir.ui.view">
             <field name="name">subscription.metrica.form</field>
             <field name="model">subscription.metrica</field>
@@ -285,7 +279,6 @@ class SubscriptionMetrica(models.Model):
             </field>
         </record>
 
-        <!-- Vista tree para 'subscription.metrica' -->
         <record id="view_tree_subscription_metrica" model="ir.ui.view">
             <field name="name">subscription.metrica.tree</field>
             <field name="model">subscription.metrica</field>
@@ -311,7 +304,6 @@ class SubscriptionMetrica(models.Model):
             </field>
         </record>
 
-        <!-- Acción para abrir la vista de métricas -->
         <record id="action_subscription_metrica" model="ir.actions.act_window">
             <field name="name">Métricas de Suscripción</field>
             <field name="res_model">subscription.metrica</field>
