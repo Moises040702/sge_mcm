@@ -1,0 +1,121 @@
+<odoo>
+    <data>
+
+        <menuitem id="menu_principal"
+                  name="Métricas"
+                  sequence="10"/>
+
+        <menuitem id="menu_metricas"
+                  name="Proyectos"
+                  parent="menu_principal"
+                  action="action_subscription_metrica"
+                  sequence="10"/>
+
+        <record id="view_form_subscription_management" model="ir.ui.view">
+            <field name="name">subscription.management.form</field>
+            <field name="model">subscription.management</field>
+            <field name="arch" type="xml">
+                <form string="Gestión de Suscripciones">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="customer_id"/>
+                            <field name="subscription_code"/>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                            <field name="renewal_date"/>
+                            <field name="status"/>
+                            <field name="is_renewable"/>
+                            <field name="auto_renewal"/>
+                            <field name="price"/>
+                            <field name="usage_limit"/>
+                            <field name="current_usage"/>
+                            <field name="use_percent"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tree_subscription_management" model="ir.ui.view">
+            <field name="name">subscription.management.tree</field>
+            <field name="model">subscription.management</field>
+            <field name="arch" type="xml">
+                <tree string="Suscripciones">
+                    <field name="name"/>
+                    <field name="customer_id"/>
+                    <field name="subscription_code"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="status"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_subscription_management" model="ir.actions.act_window">
+            <field name="name">Gestión de Suscripciones</field>
+            <field name="res_model">subscription.management</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="view_form_subscription_metrica" model="ir.ui.view">
+            <field name="name">subscription.metrica.form</field>
+            <field name="model">subscription.metrica</field>
+            <field name="arch" type="xml">
+                <form string="Métricas de Suscripción">
+                    <sheet>
+                        <group>
+                            <field name="subscription_id"/>
+                            <field name="date"/>
+                            <field name="active_subscriptions"/>
+                            <field name="generated_revenue"/>
+                            <field name="renewals"/>
+                            <field name="new_subscriptions"/>
+                            <field name="cancellations"/>
+                            <field name="recurring_clients"/>
+                            <field name="new_clients"/>
+                            <field name="arpu"/>
+                            <field name="renewal_rate"/>
+                            <field name="cancellation_rate"/>
+                            <field name="conversion_rate"/>
+                            <field name="churn_rate"/>
+                            <field name="ltv"/>
+                            <field name="cac"/>
+                            <field name="notes"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tree_subscription_metrica" model="ir.ui.view">
+            <field name="name">subscription.metrica.tree</field>
+            <field name="model">subscription.metrica</field>
+            <field name="arch" type="xml">
+                <tree string="Métricas de Suscripción">
+                    <field name="subscription_id"/>
+                    <field name="date"/>
+                    <field name="active_subscriptions"/>
+                    <field name="generated_revenue"/>
+                    <field name="renewals"/>
+                    <field name="new_subscriptions"/>
+                    <field name="cancellations"/>
+                    <field name="recurring_clients"/>
+                    <field name="new_clients"/>
+                    <field name="arpu"/>
+                    <field name="renewal_rate"/>
+                    <field name="cancellation_rate"/>
+                    <field name="conversion_rate"/>
+                    <field name="churn_rate"/>
+                    <field name="ltv"/>
+                    <field name="cac"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_subscription_metrica" model="ir.actions.act_window">
+            <field name="name">Métricas de Suscripción</field>
+            <field name="res_model">subscription.metrica</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>
